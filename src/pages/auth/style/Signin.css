@@ -1,0 +1,111 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f8fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #1da1f2;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #14171a;
+  background-color: #f4f8fa;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #1da1f2;
+  background-color: #ffffff;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn {
+  background-color: #1da1f2;
+  border: none;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #1991d0;
+}
+
+.cancel-btn {
+  background-color: #e1e8ed;
+  color: #14171a;
+  border: none;
+}
+
+.cancel-btn:hover {
+  background-color: #ccd6dd;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button[type='button'] {
+  width: 48%;
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .form-title {
+    font-size: 28px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
