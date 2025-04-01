@@ -1,15 +1,13 @@
-import './style/SideMenu.css'
-import { Link } from 'react-router-dom'
+import "./style/SideMenu.css"
+import { Link } from "react-router-dom"
 const SideMenu = ({ user, logOut }) => {
   return (
     <div>
-      <div className="sidebar__top">
-        <img
-          src="../../public/b57bb790-021f-4bcb-9767-e696bff72ffb.png"
-          alt="Old Twitter Egg"
-          className="profile-avatar"
-        />{' '}
-      </div>
+      <img
+        src="/b57bb790-021f-4bcb-9767-e696bff72ffb.png"
+        alt="Old Twitter Egg"
+        className="profile-avatar"
+      />
       <div className="sidebar__menu">
         <ul>
           <li>
