@@ -64,3 +64,37 @@
     margin: 0 5px; /* Adjust margin */
   }
 }
+
+/* Existing styles... */
+
+/* Your existing CSS here */
+
+/* Add the following responsive layout adjustments */
+.app {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sidebar, .rightSidebar {
+  flex: 0 0 300px; /* Set a base width */
+}
+
+.feed {
+  flex: 1; /* Allow the feed to grow */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .app {
+    flex-direction: column; /* Stack on smaller screens */
+  }
+
+  .sidebar, .rightSidebar {
+    width: 100%; /* Full width */
+  }
+
+  .feed {
+    width: 100%; /* Full width */
+  }
+}
