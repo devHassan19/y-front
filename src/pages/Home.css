@@ -33,3 +33,34 @@
   text-decoration: underline;
   color: #0056b3;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home-page h1 {
+    font-size: 2rem; /* Smaller font size */
+  }
+
+  .home-page h3 {
+    font-size: 1.1rem; /* Smaller font size */
+  }
+
+  .home-page .links a {
+    font-size: 1rem; /* Smaller link font size */
+    margin: 0 10px; /* Adjust margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page h1 {
+    font-size: 1.5rem; /* Even smaller font size */
+  }
+
+  .home-page h3 {
+    font-size: 1rem; /* Even smaller font size */
+  }
+
+  .home-page .links a {
+    font-size: 0.9rem; /* Even smaller link font size */
+    margin: 0 5px; /* Adjust margin */
+  }
+}

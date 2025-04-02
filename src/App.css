@@ -8,7 +8,6 @@
 body {
   background-color: #f5f8fa;
   color: #14171a;
-  font-family: 'Arial', sans-serif;
 }
 
 #root {
@@ -198,6 +197,7 @@ body {
   text-decoration: underline;
 }
 
+/* Responsive Styles */
 @media (max-width: 1024px) {
   .app {
     flex-direction: column;
@@ -227,5 +227,49 @@ body {
 
   .tweet__content {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tweetBox textarea {
+    font-size: 14px; /* Smaller textarea font size */
+  }
+
+  .sidebar__top h2 {
+    font-size: 20px; /* Smaller sidebar title */
+  }
+
+  .sidebar__menu li {
+    font-size: 16px; /* Smaller menu font size */
+  }
+
+  .feed__header h2 {
+    font-size: 20px; /* Smaller feed header */
+  }
+
+  .rightSidebar h3 {
+    font-size: 18px; /* Smaller sidebar header */
+  }
+}
+
+@media (max-width: 480px) {
+  .tweetBox {
+    padding: 15px; /* Adjust tweet box padding */
+  }
+
+  .tweetBox button {
+    font-size: 12px; /* Smaller button font size */
+  }
+
+  .tweet__header h3 {
+    font-size: 16px; /* Smaller tweet header */
+  }
+
+  .tweet__header p {
+    font-size: 12px; /* Smaller tweet date */
+  }
+
+  .tweet__content {
+    font-size: 12px; /* Smaller tweet content */
   }
 }
